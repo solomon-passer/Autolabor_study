@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="waypoints_visualizer"
+        type="load_waypoints2.py"
+        name="waypoints_visualizer2"
+        output="screen" />
+</launch>
+

@@ -1,0 +1,14 @@
+<launch>
+  <!-- 正确设置 yaml_path 参数，而不是其他名字 -->
+  <param name="~yaml_path" value="$(find waypoints_visualizer)/config/waypoints.yaml" />
+
+  <!-- 启动节点 -->
+  <node pkg="waypoints_visualizer"
+        type="load_waypoints.py"
+        name="waypoints_visualizer"
+        output="screen">
+    <!-- 也可以把参数写在 node 内 -->
+    <!-- <param name="yaml_path" value="$(find waypoints_visualizer)/config/waypoints.yaml" /> -->
+  </node>
+</launch>
+

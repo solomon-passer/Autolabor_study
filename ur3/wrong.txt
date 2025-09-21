@@ -1,0 +1,2 @@
+由于是从soildworks倒导过来的，会有些错误。package中email前面的2改为@
+launch文件中urdf的路径
