@@ -1,0 +1,8 @@
+<launch>
+  <node name="sensor_data_node" pkg="sensor_data" type="sensor_node" output="screen">
+    <!-- 串口参数配置，可以根据实际情况修改 -->
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="baudrate" value="9600" />
+  </node>
+</launch>
+

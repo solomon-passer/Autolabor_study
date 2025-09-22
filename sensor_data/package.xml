@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>sensor_data</name>
+  <version>0.0.0</version>
+  <description>ROS node for reading environmental sensor data via UART and publishing as ROS topics</description>
+  <maintainer email="chaoyan@szut.edu.cn">chaoyan</maintainer>
+  <license>MIT</license>
+
+  <!-- 编译工具依赖 -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- 核心依赖（C++和Python） -->
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <!-- 已移除重复的serial依赖: <depend>serial</depend> -->
+
+  <!-- 串口通信依赖 (使用特定标签以清晰表达依赖关系) -->
+  <build_depend>serial</build_depend>
+  <build_export_depend>serial</build_export_depend>
+  <exec_depend>serial</exec_depend>
+
+  <!-- 消息生成相关依赖 -->
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>
