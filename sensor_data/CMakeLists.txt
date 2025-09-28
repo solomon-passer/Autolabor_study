@@ -45,3 +45,8 @@ target_link_libraries(sensor_node
   ${serial_LIBRARIES}
 )
 
+add_executable(serial_raw_viewer src/serial_raw_viewer.cpp)
+target_link_libraries(serial_raw_viewer
+  ${catkin_LIBRARIES}
+)
+
