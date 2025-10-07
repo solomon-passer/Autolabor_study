@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gas_heatmap</name>
+  <version>0.0.0</version>
+  <description>用于 LIMO 机器人气体传感器数据同步与热点图数据记录的功能包</description>
+
+  <maintainer email="agilex@agilex.tech">agilex</maintainer>
+  <license>BSD</license>
+  <author email="agilex@agilex.tech">agilex</author>
+
+  <!-- 构建工具依赖 -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- 编译时依赖（新增 message_runtime 的 build_depend） -->
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>message_runtime</build_depend> 
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <!-- 编译导出依赖 -->
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>message_filters</build_export_depend>
+  <build_export_depend>nav_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+
+  <!-- 运行时依赖（保留 message_runtime 的 exec_depend） -->
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>message_filters</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>
+
